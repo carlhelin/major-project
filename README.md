@@ -1,4 +1,4 @@
-# Major Project - NLP IT Company
+# Major Project - Entity Macthing
 
 This program
 
