@@ -9,7 +9,10 @@ This program
 Packages are listed below.
 
 ```bash
-pip install
+pip install selenium
+pip install webdriver-manager
+pip install fake_useragent
+pip install urllib3
 ```
 
 ## Usage
