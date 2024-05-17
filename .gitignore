@@ -1,3 +1,6 @@
 readme.ipynb
 __pycache__/
 **.DS_Store
+fine-tune/
+apex/
+ditto/

@@ -1,6 +1,6 @@
 # Major Project - Entity Macthing
 
-This program aims to match entities from different datasources. 
+This program aims to match entities from different datasources.
 
 ## Requirements
 
