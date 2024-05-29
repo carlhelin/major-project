@@ -21,6 +21,16 @@ BEER_DIR = 'Beer'
 FODORS_ZAGATS_DIR = 'Fodors-Zagats'
 ABT_BUY_DIR = 'Abt-Buy'
 
+# Datasets rows
+DBLP_ACM_DIR_ROW = 'id,title,authors,venue,year'
+DBLP_GOOGLESCHOLAR_DIR_ROW = 'id,title,authors,venue,year'
+ITUNES_AMAZON_DIR_ROW = 'id,Song_Name,Artist_Name,Album_Name,Genre,Price,CopyRight,Time,Released'
+WALMART_AMAZON_DIR_ROW = 'id,title,category,brand,modelno,price'
+AMAZON_GOOGLE_DIR_ROW = 'id,title,manufacturer,price'
+BEER_DIR_ROW = 'id,Beer_Name,Brew_Factory_Name,Style,ABV'
+FODORS_ZAGATS_DIR_ROW = 'id,name,addr,city,phone,type,class'
+ABT_BUY_DIR_ROW = 'id,name,description,price'
+
 # General files for all datasets folders
 TABLE_A = 'tableA.csv'
 TABLE_B = 'tableB.csv'
