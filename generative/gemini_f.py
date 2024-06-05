@@ -1,9 +1,4 @@
-import pandas as pd
-import google.generativeai as genai
-from IPython.display import display
-from IPython.display import Markdown
-
-import sys, os, inspect, time
+import sys, inspect
 sys.path.append("..")
 import config
 
@@ -17,7 +12,7 @@ def domain_simple(dataset_comparison):
     return f"Do the two {dataset_comparison} descriptions match?"
 
 def domain_complex(dataset_comparison):
-    return f"Do the two {dataset_comparison} descriptions refer to the same real-world {dataset_comparison}?"
+    return f"Do the two {dataset_comparison} descriptions refer to the same real-world {dataset_comparison}s?"
 
 def force_or_not():
     return "Answer with 'Yes' if they do and 'No' if they do not."
@@ -67,10 +62,3 @@ def parse_response(response):
         return 0
     else:
         return -1
-
-def main():
-    pass
-        
-
-if __name__ == "__main__":
-    main()
