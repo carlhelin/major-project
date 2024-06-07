@@ -1,7 +1,9 @@
 readme.ipynb
 __pycache__/
 **.DS_Store
-fine-tune/
 apex/
 ditto/
 generative/API_KEY.bash
+/fine-tune/logs/
+/fine-tune/models/
+/fine-tune/results/
