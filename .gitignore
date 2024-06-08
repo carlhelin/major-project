@@ -7,3 +7,4 @@ generative/API_KEY.bash
 /fine-tune/logs/
 /fine-tune/models/
 /fine-tune/results/
+/fine-tune/tmp_trainer/
