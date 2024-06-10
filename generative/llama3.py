@@ -161,9 +161,9 @@ def main():
             try:
                 csv_name = f"{folder_name}_{dataset_name}"               
 
-                # if not os.path.exists(f"{save_folder}/{csv_name}.csv"):
-                #     with open(f"{save_folder}/{csv_name}.csv", 'w') as f:
-                #         f.write("general_or_domain,simple_or_complex,force_or_not,tableA_id,tableB_id,pred,label, time\n")
+                if not os.path.exists(f"{save_folder}/{csv_name}.csv"):
+                    with open(f"{save_folder}/{csv_name}.csv", 'w') as f:
+                        f.write("general_or_domain,simple_or_complex,force_or_not,tableA_id,tableB_id,pred,label,time\n")
 
                 train, val, test = config.load_datasets(folder_name, dataset_name)
                 tableA_df, tableB_df = config.tableA_tableB(folder_name, dataset_name)
@@ -185,20 +185,18 @@ def main():
                         for force in extra_correction:
                             domain = determine_domain(dataset_name) if prompt not in [general_simple, general_complex] else None
                             prompt_sentence = generate_prompt_sentence(sentenceA, sentenceB, force, prompt, domain)
-                            lenght += len(prompt_sentence)
+                            
                             start = time.time()
-                            # print(prompt_sentence)
                             response = llama3.llama_chat_get_response(prompt_sentence)
-                            print(response)
                             end = time.time()
                             time_taken = end - start
 
-                            # pred = parse_response(response)
+                            pred = parse_response(response)
                             simple_or_complex = determine_complexity(prompt)
                             general_or_domain = 'domain' if prompt in [domain_simple, domain_complex] else 'general'
                             yes_or_no = 1 if force else 0
 
-                            # save_predictions(f"{save_folder}/{csv_name}.csv", general_or_domain, simple_or_complex, yes_or_no, idA, idB, pred, single_label, time_taken)
+                            save_predictions(f"{save_folder}/{csv_name}.csv", general_or_domain, simple_or_complex, yes_or_no, idA, idB, pred, single_label, time_taken)
             except:
                 print(f"Dataset {folder_name}_{dataset_name} does not exist.")
                 continue
