@@ -1,11 +1,10 @@
 # Major Project - Entity Matching with LLM
 
-This project is researching different solutions for Entity Matching, where the purpose is to match different entities that refer to the same real-world data. Three different systems have been tested and evaluated. One benchmark dataset called Magellan has been utilized for both training and performance measures.
+This project is researching different solutions for Entity Matching, where the purpose is to match different entities that refer to the same real-world data. Three different systems have been tested and evaluated. One benchmark dataset called Magellan has been utilised for both training and performance measures.
 
 ## Requirements
 
 - Python 3.8 or higher
-- pip for package installation
 - Llama3 model downloaded from Ollama
 - API key from Google to run Gemini
 - DistilBERT installed from HuggingFace
