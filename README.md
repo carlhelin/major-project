@@ -35,9 +35,9 @@ Run the notebooks below and monitor them, as websites are good at bot prevention
 
 ### Train / Prompt Models
 
-`fine-tune/bert.ipynb` to train a new fine-tuned model. NB: this takes really long.  
-`generative/gemini.ipynb` to prompt Gemini. NB: this requires Google API key.  
-`generative/llama3.py` to prompt Llama3. NB: this requires downloaded model.
+`fine-tune/bert.ipynb` to train a new fine-tuned model. **NB:** this takes really long.  
+`generative/gemini.ipynb` to prompt Gemini. **NB:** this requires Google API key.  
+`generative/llama3.py` to prompt Llama3. **NB:** this requires downloaded model.
 
 ### Results
 
