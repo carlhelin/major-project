@@ -1,6 +1,3 @@
-*
-*/
-!.gitignore
 readme.ipynb
 __pycache__/
 **.DS_Store
@@ -9,5 +6,6 @@ ditto/
 generative/API_KEY.bash
 /fine-tune/logs/
 /fine-tune/models/*
+!/fine-tune/models/.gitkeep
 /fine-tune/results/
 /fine-tune/tmp_trainer/
