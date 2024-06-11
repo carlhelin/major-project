@@ -12,7 +12,7 @@ This project is researching different solutions for Entity Matching, where the p
 ## Fine-tuned Model Installation
 
 [Link](https://drive.google.com/drive/folders/1ZvDsY_5Ot0U8rd1DjiWkZdLfSVPIiOw-?usp=drive_link)  
-Since git only allows 100MB of files, go to the link, download the folder, put the whole folder in the `fine-tune/models/` directory, then you should be able to run the fine-tuned model in `fine-tune/bert_results.ipynb`.
+Since git only allows 100MB of files, go to the link, download the folder, put the entire folder in the `fine-tune/models/` directory, then you should be able to run the fine-tuned model in `fine-tune/bert_results.ipynb`.
 
 ## Installation
 
