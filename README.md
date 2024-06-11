@@ -10,6 +10,10 @@ This project is researching different solutions for Entity Matching, where the p
 - API key from Google to run Gemini
 - DistilBERT installation from HuggingFace
 
+## Install fine-tuned model from link
+
+Since git only allows 100MB of files, go to the link below and put the files in the `fine-tune/models/` directory, then you should be able to run the fine-tuned model.
+
 ## Installation
 
 Packages are listed below.
