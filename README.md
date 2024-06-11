@@ -31,13 +31,13 @@ Most of the repository consists of notebooks, which makes it convenient to use. 
 Run the notebooks below and monitor them, as websites are good at bot prevention.  
 `scraped data/agi.ipynb`  
 `scraped data/coles.ipynb`  
-`scraped data/woolworths.ipynb`.
+`scraped data/woolworths.ipynb`
 
-### Train / Prompt models
+### Train / Prompt Models
 
-`fine-tune/bert.ipynb` to train a new fine-tuned model.  
-`generative/gemini.ipynb` to prompt Gemini.  
-`generative/llama3.py` to prompt Llama3.
+`fine-tune/bert.ipynb` to train a new fine-tuned model. NB: this takes really long.  
+`generative/gemini.ipynb` to prompt Gemini. NB: this requires Google API key.  
+`generative/llama3.py` to prompt Llama3. NB: this requires downloaded model.
 
 ### Results
 
@@ -56,15 +56,15 @@ This project has the following directory structure:
   - `structured`: Structured data.
   - `textual`: Textual dataset.
 - `fine-tune`: Files related to model fine-tuning.
-  - `encoded`: Directory for encoded files.
-  - `models`: Trained models.
+  - `encoded`: Directory for tokenized Magellan dataset.
+  - `models`: Trained models, currently empty, need to download and put folder here.
 - `generative`: Gemini and Llama3 models.
-  - `gemini_predictions`: predictions for Gemini.
-  - `llama3_predictions`: predictions for Llama3.
+  - `gemini_predictions`: result of predictions for Gemini.
+  - `llama3_predictions`: result of predictions for Llama3.
 - `results`: Gemini, Llama3 and DistilBERT results.
-- `scraped data`: all scraped data from AGI, Coles, and Woolworths.
+- `scraped data`: All scraped data from AGI, Coles, and Woolworths.
 
-Please note that this is a high-level overview. Each directory may contain various other files and subdirectories.
+Please note that this is a high-level overview. Each directory may contain various other files and subdirectories. Also run of certain notebooks may create new directories/files.
 
 ## Authors
 
