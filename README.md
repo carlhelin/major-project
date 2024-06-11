@@ -1,6 +1,6 @@
 # Major Project - Entity Matching with LLM
 
-This project is researching different solutions for Entity Matching, where the porpuse is to match different entities that refer to the same real world data. Three different systems has been tested and evaluated. One benchmark dataset called Magellan has been utilised for both training and performance measures.
+This project is researching different solutions for Entity Matching, where the purpose is to match different entities that refer to the same real-world data. Three different systems have been tested and evaluated. One benchmark dataset called Magellan has been utilized for both training and performance measures.
 
 ## Requirements
 
@@ -8,36 +8,27 @@ This project is researching different solutions for Entity Matching, where the p
 - pip for package installation
 - Llama3 model downloaded from Ollama
 - API key from Google to run Gemini
-- DistilBERT installation from HuggingFace
+- DistilBERT installed from HuggingFace
 
-## Install fine-tuned model from link
+## Fine-tuned model installation
 
-Since git only allows 100MB of files, go to the link below and put the files in the `fine-tune/models/` directory, then you should be able to run the fine-tuned model.
+Since git only allows 100MB of files, go to this [link](https://drive.google.com/drive/folders/1ZvDsY_5Ot0U8rd1DjiWkZdLfSVPIiOw-?usp=drive_link) and put the files in the `fine-tune/models/` directory, then you should be able to run the fine-tuned model in `fine-tune/bert_results.ipynb`.
 
 ## Installation
 
-Packages are listed below.
+All necessary Python packages are listed in `requirements.txt`.
 
 ```bash
-pip install pandas
-pip install numpy
-pip install transformers
-pip install selenium
-pip install webdriver_manager
-pip install fake_useragent
-pip install bs4
-pip install pathlib
-pip install torch
-pip install ollama
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-Most of the repository uses notebooks which makes it convinient to use. Clone the repository and run the notebooks provided, the benchmark data is in the repository already. Some extra steps are required for Llama3 and Gemini.
+Most of the repository consists of notebooks, which makes it convenient to use. Clone the repository and run the provided notebooks, the benchmark data is already in the repository. Some extra steps are required for Llama3 and Gemini.
 
 ### Data Scraping
 
-Run notebooks below and monitor since websites are good at bot-prevention.  
+Run the notebooks below and monitor them, as websites are good at bot prevention.  
 `scraped data/agi.ipynb`  
 `scraped data/coles.ipynb`  
 `scraped data/woolworths.ipynb`.
@@ -50,7 +41,9 @@ Run notebooks below and monitor since websites are good at bot-prevention.
 
 ### Results
 
-`fine-tune/bert_results.ipynb` for creating results on the test data.  
+`generative_results.ipynb` for creating general results for Gemini and Llama3.  
+`fine-tune/bert_results.ipynb` for creating general results on DistilBERT.
+
 `generative/gemini_eval.ipynb` to create specific results for Gemini.  
 `generative/llama3_eval.ipynb` to create specific results for Llama3.
 
@@ -68,7 +61,7 @@ This project has the following directory structure:
 - `generative`: Gemini and Llama3 models.
   - `gemini_predictions`: predictions for Gemini.
   - `llama3_predictions`: predictions for Llama3.
-- `results`: Gemini, Llama3 and DistilBERT resutls.
+- `results`: Gemini, Llama3 and DistilBERT results.
 - `scraped data`: all scraped data from AGI, Coles, and Woolworths.
 
 Please note that this is a high-level overview. Each directory may contain various other files and subdirectories.

@@ -1,0 +1,10 @@
+pandas
+numpy
+transformers
+selenium
+webdriver_manager
+fake_useragent
+bs4
+pathlib
+torch
+ollama
