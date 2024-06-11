@@ -1,4 +1,4 @@
-# Major Project - Entity Matching with LLM
+# Entity Matching with LLM
 
 This project is researching different solutions for Entity Matching, where the purpose is to match different entities that refer to the same real-world data. Three different systems have been tested and evaluated. One benchmark dataset called Magellan has been utilised for both training and performance measures.
 
